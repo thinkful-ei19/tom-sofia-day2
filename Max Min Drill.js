@@ -28,3 +28,17 @@ function max(numbers) {
   return max;
 }
 console.log(max(numbers));
+
+function min(numbers) {
+  let min = numbers[0];
+  let currentNum =0;
+  while (currentNum > numbers.length) {
+    if (numbers[currentNum] < min) {
+      min = numbers[currentNum];
+    }
+    currentNum++;
+  }
+  return min;
+}
+
+console.log(min(numbers));
