@@ -1,0 +1,11 @@
+Questions
+What is scope? Your explanation should include the idea of global vs. local scope.
+    Scope is on high level the area where a variable/function/element accessible to the program. Generally global scope should be avoided if needed. This is because since global scope effects the entire program this can cause unintended errors. Local scope means that the variable is only accessable in the local scope of the function. Local scope variables lifetime ends after the function is passed.
+Why are global variables avoided?
+    Global variables should be avoid to prevent unintended variable manipulation on other parts of the program. Non locality, Implicit coupling, Implicit coupling, Checking, Concurrency issues, Namespace pollution, and memory alllocation issues are all problems that can arise from global scope variables.
+     For instance if one developer delcared global variable in his/her code then it could potenially have an adverse affect on code anthoer developer wrote.
+Explain JavaScript's strict mode
+    Strict mode is a way to introduce better error-checking into your code. When you use strict mode, you cannot, for example, use implicitly declared variables, or assign a value to a read-only property, or add a property to an object that is not extensible. If you do this will strict mode on JS will throw an error. Strict mode also helps the Javascript engine optimize performance. Meaning if two identical pieces ran one with strict and one without the code with strict mode will sometimes run faster.
+What are side effects, and what is a pure function?
+    'A function is said to be pure when it is both determinate and has no side effects. With the exception of functions that are specifically meant to have side effects (see database example above),you should strive to keep the functions you write pure.' (thinkful unit2)
+        -This means that given the same inputs a pure function will always return smae value because there are no side effects and its determinate. 
